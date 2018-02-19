@@ -1,0 +1,12 @@
+<h3>Number of records returned = {{model.resultCount}}</h3>
+<button {{action 'getApiResults' }}>Click to get Artist Names</button>
+{{#if confirmShown}}
+<ul>
+	{{#each model as |artistIndex| }}
+	<li>
+		<p>Artist Name = <strong>{{artistIndex.artistName}}</strong> Artist Track = <strong>{{artistIndex.trackName}}</strong></p>
+	</li>
+	{{/each}}
+</ul>
+{{/if}}
+{{yield}}

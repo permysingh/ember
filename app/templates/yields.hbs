@@ -1,0 +1,7 @@
+<hr>
+{{#yield-example action="pressed" as |prop|}}
+	<h3>INSIDE YIELD COMPONENT</h3>
+	<p><strong>Prop Value sent in from yield.component.js = {{prop.paramValue}}</strong></p>
+	<p><strong>String Param Colour passed in from yield Tag in template = {{prop.colorString}}</strong></p>
+	<p><strong>String Number Passed in from yield Tag in templated = {{prop.numberPassedParam}}</strong></p>
+{{/yield-example}}

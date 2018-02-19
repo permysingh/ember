@@ -1,0 +1,50 @@
+@import "variables";
+@import "shopping-cart";
+
+body {
+
+    padding: 20px;
+
+    h1 {
+        color : $header-color; 
+    }
+
+    h2 {
+        font-size : 22px;
+    }
+
+    h3 {
+        font-size :18px;
+    }
+
+    h4 {
+        font-size :16px;
+        font-weight: bold;
+    }
+
+    a.color-block {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        margin-right: 10px;
+        border: 1px solid grey;
+    
+        &:hover {
+            background-color: grey !important;
+        }   
+    
+    }
+
+    .main-color-block {
+        width : 200px;
+        height: 200px;
+        display:block;
+        border: 1px solid grey;   
+    }    
+
+    .color-word{
+        font-weight: bold;
+    }
+
+}
+

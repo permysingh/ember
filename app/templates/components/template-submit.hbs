@@ -1,0 +1,6 @@
+<h2>Example of Event Driven Binding</h2>
+<p>Below is an example of passing in a value from an input and setting it when Click me is pressed</p>
+{{input value=testValueIn}}
+<p>Value in Input Textfield is : <strong>{{testValueProp}}</strong></p>
+<button {{action 'press' testValueIn }}>Click me !</button> 
+{{yield}}

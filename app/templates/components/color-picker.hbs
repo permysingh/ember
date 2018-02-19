@@ -1,0 +1,19 @@
+
+<p>Please choose a colour from below</p>
+	{{#each colors as |colorIndex| }}
+        <a 
+            href="#" 
+            style="background-color: {{colorIndex}}" 
+            class="color-block" 
+            {{action handleClick colorIndex}}>
+        </a>
+	{{/each}}
+<p>The Selected Colour is : 
+    <span style="color:{{currentColor}};" class="color-word">
+        {{currentColor}}
+    </span>
+</p>
+<div class="main-color-block" 
+    style="background-color:{{currentColor}}">
+</div>
+{{yield}}

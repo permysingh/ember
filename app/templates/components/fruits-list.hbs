@@ -1,0 +1,11 @@
+<h2>Example of Looping thru an Array</h2>
+<p>Add another friut to the fruit list</p>
+{{input value=fruitVal id="inputFriutEntry"}}
+<button id="addFruit" {{action 'addFruit' fruitVal}} >Add Fruit</button>
+<button id="removeLastFruit" {{action 'removeLastItem' }} >Remove Last Item</button>
+<ul id="fruitList">
+	{{#each listOfFruitsArr as |fruitsIndex|}}
+		<li>{{fruitsIndex}}</li>
+	{{/each}}
+</ul>
+{{yield}}

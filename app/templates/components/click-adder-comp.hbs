@@ -1,0 +1,9 @@
+<p>Please Click the button below : </p>
+<p>
+    Counter value is : <strong class="count-val">{{initCounterValue}}</strong>
+</p>
+<p>
+    <button id="increment" {{action 'incrementClick'}}>Add (+)</button>
+    <button id="decrement" {{action 'decrementClick'}}>Subtract (+)</button>
+</p>
+{{yield}}

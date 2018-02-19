@@ -1,0 +1,15 @@
+<h2>Shopping cart</h2>
+<div class="prod-list-container">
+    {{#each products as |prodIndex|}}
+        <div class="product-item">
+            <h3>{{prodIndex.prodTitle}}</h3>
+            <p><img src="{{prodIndex.prodImage}}"/></p>
+            <h4>Description</h4>
+            <p>{{prodIndex.desc}}</p>
+            <h3>Price</h3>
+            <p>£ {{prodIndex.price}}</p>
+            <button id="addToCart" {{ action 'addToCart' prodIndex.prodId }}>Add Product</button>
+        </div>
+    {{/each}}
+</div>
+{{yield}}
