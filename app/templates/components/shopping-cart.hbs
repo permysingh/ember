@@ -1,6 +1,6 @@
-<h2>Shopping cart</h2>
 <div class="prod-list-container">
-    {{#each products as |prodIndex|}}
+    <h2>Shopping cart</h2>
+    {{#each model.data as |prodIndex|}}
         <div class="product-item">
             <h3>{{prodIndex.prodTitle}}</h3>
             <p><img src="{{prodIndex.prodImage}}"/></p>

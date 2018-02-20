@@ -4,14 +4,17 @@ import Service from '@ember/service';
 export default Ember.Service.extend({
     init() {
         this._super(...arguments);
-        this.set('basket', []);
-      }, 
-    basket: [],
+    }, 
     addToBasket(prodItem){
 
-        alert('test 1243234');
+        debugger;
 
-        //this.get('basket').pushObject(prodItem);
+        this.get('basket').pushObject(prodItem);
+    
+    }, 
+    addItemQty(prodItem){
+
+        prodItem.prodQty = 1;
 
     }
 });

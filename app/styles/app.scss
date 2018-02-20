@@ -1,10 +1,17 @@
 @import "ember-bootstrap/bootstrap";
 @import "variables";
 @import "shopping-cart";
+@import "basket-cart";
 
 body {
 
     padding: 20px;
+
+    h1, h2, h3 {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+    }
 
     h1 {
         color : $header-color; 

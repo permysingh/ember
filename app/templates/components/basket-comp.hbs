@@ -1,0 +1,10 @@
+<div class="basket-list-container">
+    <h2>My Basket</h2>
+    <ul class="basket-cotents">
+        {{#each model as |basketIndex| }}
+            <li>{{basketIndex.prodTitle}}</li> 
+        {{/each}}
+    </ul>
+</div>
+
+{{yield}}

@@ -6,27 +6,27 @@ export default Component.extend({
     init(){
 
         this._super(...arguments);
-        //console.log('INIT');
+        console.log('INIT');
 
     },
     didReceiveAttrs(){
 
-        //console.log('RECEIVED ATTRS');
+        console.log('RECEIVED ATTRS');
 
     },
     willRender(){
 
-        //console.log('WILL RENDER');
+        console.log('WILL RENDER');
 
     },
     didInserElement(){
 
-        //console.log('INSERT ELEMENT');
+        console.log('INSERT ELEMENT');
 
     },
     didRender(){
 
-        //console.log('DID RENDER');
+        console.log('DID RENDER');
 
     },
     actions: {
